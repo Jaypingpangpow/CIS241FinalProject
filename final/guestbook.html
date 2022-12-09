@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta name="author" content="Jiacong Zhou" />
+	<meta name="keywords" content="Jiacong Zhou" />
+<meta charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="guestbook/guestbook.css"/>
+<style>
+	form{
+		text-align: center;
+	}
+	
+	.aa,.bb{
+		width: 100px;
+		height: 30px;
+	}
+</style>
+<title> Guest Book</title>
+
+</head>
+
+<body>
+ <!--导航栏-->
+ <div class="container">
+<nav>
+	<ul>
+		<li><a href="home.html">Home</a></li> 
+		<li><a href="guestbook.html">Guestbook</a></li> 
+		<li><a href="interst.html">Interst</a></li> 
+		<li><a href="resume.html">Resume</a></li>
+		<li><a href="reflections.html">Reflections</a></li> 
+	</ul>
+
+<h1 style="text-align:center; color:#c31432; font-size:38px;">Guestbook</h1>
+
+<form method="post" 
+action="http://ss1.ciwcertified.com/cgi-bin/process.pl">
+	<p>Enter Your Name:<input type="text" name="Name" size="40"></p>
+	
+	<p>Enter Your Email:<input type="text" name="Email" size="40"/></p>
+
+	<p>What country do you live in?<input type="text" name="country" size="40"></p>
+
+
+<p>What is your experience as Web Developer?</p>
+<p><input type="radio" name="web_expeerience" value="None"/>None<br/></p>
+<p><input type="radio" name="web_expeerience" value="Beginner"/>Beginner<br/></p>
+<p><input type="radio" name="web_expeerience"value="Immediatte"/>Immediate<br/></p>
+<p><input type="radio" name="web_expeerience"value="Advanced"/>Advanced<br/></p>
+
+<p>Should we add you to our mailing list?</p>
+<p><input type="checkbox" name="maillinglist"/></p>
+
+<p>What web technologies are you interested in? (check all that apply):</p>
+<p><select name="interests" multiple="multiple" size="6"></p>
+<option>HTML</option>
+<option>CSS</option>
+<option>JavaScript</option>
+<option>AJAX</option>
+<option>SQL</option>
+<option>PHP</option>
+</select>
+
+
+<p>How did you find my website?</p>
+<p><select name="website"></p>
+<option>Select one</option>
+<option>I'm a friend</option>
+<option>A friend directed me to your site</option>
+<option>School Web Site</option>
+<option>A search engine directed me to your site</option>
+<option>I came across your site by accident</option>
+<option>Other</option>
+
+</select>
+
+
+<p>Comments:</p>
+<p><textarea name="comments" cols="60" rows="6">
+
+Enter your message here.
+</textarea>
+</br>
+<p><input type="submit" value="sumbit" class="aa"/>
+<input type="reset" class="bb"/></p>
+
+</form>
+</body>
+</nav>
+</div>
+</html>

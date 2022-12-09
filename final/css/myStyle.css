@@ -1,0 +1,17 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a:hover{
+	transition: all 1s;
+	color: cornflowerblue;
+}
+p{
+	margin: 1%;
+}
+.container img{
+	border: 3px solid #000;
+}
+.container p:hover{
+	font-weight: 800;
+}
